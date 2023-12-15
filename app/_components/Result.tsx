@@ -46,7 +46,7 @@ export function Result({ result, total }: { result: number; total: number }) {
           </div>
         </div>
       </div>
-      <div className="flex items-start justify-end w-full py-3">
+      <div className="flex items-start justify-end w-full py-3 md:py-8">
         <Link className={cn(buttonVariants(), "w-full lg:max-w-xl")} href="/">
           Play Again
         </Link>

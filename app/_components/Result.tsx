@@ -18,7 +18,10 @@ export function Result({ result, total }: { result: number; total: number }) {
   const quiz = searchParams.get("quiz");
 
   let Quiz = () => (
-    <div className="flex items-center md:text-2xl text-lg md:gap-6 gap-4 font-medium">
+    <div
+      role="category"
+      className="flex items-center md:text-2xl text-lg md:gap-6 gap-4 font-medium"
+    >
       <QuizIcons quiz={quiz || ""} />
       {quiz}
     </div>
@@ -33,7 +36,10 @@ export function Result({ result, total }: { result: number; total: number }) {
           </h1>
         </div>
         <div className="flex flex-col items-center md:gap-10 gap-4 md:p-12 p-8 dark:bg-[#3B4D66] bg-white rounded-3xl w-full lg:max-w-xl">
-          <div className="flex items-center md:text-2xl text-lg md:gap-6 gap-4 font-medium">
+          <div
+            role="category"
+            className="flex items-center md:text-2xl text-lg md:gap-6 gap-4 font-medium"
+          >
             <Quiz />
           </div>
           <div className="flex flex-col items-center gap-4">

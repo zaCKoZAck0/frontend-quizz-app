@@ -10,7 +10,10 @@ export function Navigation() {
   const quiz = searchParams.get("quiz");
 
   let Quiz = () => (
-    <div className="flex items-center md:text-2xl text-lg md:gap-6 gap-4 font-medium">
+    <div
+      role="icon"
+      className=" flex items-center md:text-2xl text-lg md:gap-6 gap-4 font-medium"
+    >
       <QuizIcons quiz={quiz || ""} />
       {quiz}
     </div>
